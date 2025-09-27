@@ -1,0 +1,1 @@
+const steps = [...document.querySelectorAll('.step')], photo = document.querySelector('.photo_deliveri'); steps.forEach(s => s.onmouseenter = () => { steps.forEach(x => x.classList.toggle('active', x === s)); photo.style.backgroundImage = `url(${s.dataset.img})` }); steps[0].onmouseenter();
